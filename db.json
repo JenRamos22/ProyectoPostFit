@@ -1,0 +1,29 @@
+{
+    "lugares": [
+      {
+        "id": "1",
+        "nombre": "Café Pet Friendly",
+        "tipo": "Cafetería",
+        "ubicacion": "Calle 123, Chía"
+      },
+      {
+        "id": "2",
+        "nombre": "Parque para Mascotas",
+        "tipo": "Parque",
+        "ubicacion": "Avenida 456, Chía"
+      },
+      {
+        "id": "3",
+        "nombre": "Hotel Mascotas Bienvenidas",
+        "tipo": "Hotel",
+        "ubicacion": "Boulevard 789, Cajicá"
+      },
+      {
+        "id": "4",
+        "nombre": "Restaurante Amigo Animal",
+        "tipo": "Restaurante",
+        "ubicacion": "Calle 321, Cajicá"
+      }
+    ]
+  }
+  
