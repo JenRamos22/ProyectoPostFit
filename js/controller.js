@@ -4,20 +4,20 @@ console.log("Cargando controller.js...");
 const Controller = {
     iniciar: async function() {
         console.log("Iniciando Controller...");
-        
+
+        // Verifica si la página tiene el contenedor de lugares
+        const listaLugares = document.getElementById("lista-lugares");
+
+        if (!listaLugares) {
+            console.warn("Esta página no tiene lista de lugares. No se ejecuta la carga.");
+            return; // Detiene la ejecución si no está en la página correcta
+        }
+
         await Model.cargarLugares();
         console.log("Datos cargados:", Model.obtenerLugares());
 
-        // Verifica si el elemento "lista-lugares" existe
-        const listaLugares = document.getElementById("lista-lugares");
         console.log("lista-lugares encontrado:", listaLugares);
-
-        if (listaLugares) {
-            console.log("Mostrando lugares en la vista...");
-            View.mostrarLugares(Model.obtenerLugares());
-        } else {
-            console.error("ERROR: No se encontró #lista-lugares en el DOM.");
-        }
+        View.mostrarLugares(Model.obtenerLugares());
     }
 };
 
