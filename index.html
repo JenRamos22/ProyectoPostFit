@@ -1,43 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paw Places - Inicio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <script defer src="js/model.js"></script>
-    <script defer src="js/view.js"></script>
-    <script defer src="js/controller.js"></script>
-    <script defer src="js/app.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PostFit - Recupera tu bienestar después del embarazo</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script defer src="js/model.js"></script>
+  <script defer src="js/view.js"></script>
+  <script defer src="js/controller.js"></script>
+  <script defer src="js/app.js"></script>
 </head>
+
 <body>
-    <header>
-        <div class="content-header">
-            <div class="logo-container">
-                <img src="img/pets.png" alt="Pets Logo" class="logo">
-            </div>
-            <div class ="logo-text">
-                <h1>Paw Places</h1>
-            </div>
-            
-            <nav>
-                <a href="index.html" class="active">Inicio</a>
-                <a href="lugares.html">Lugares</a>
-                <a href="categorias.html">Categorías</a>
-                <a href="contacto.html">Sobre Nosotros</a>
-            </nav>
-        </div>
-    </header>
-    <main class="hero">
+
+  <!-- HEADER -->
+  <header>
+    <div class="content-header">
+      <div class="logo-container">
+        <img src="img/girl.png" alt="PostFit Logo" class="logo" />
+        <h1 class="logo-text">PostFit</h1>
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+      <!-- Botones de acción -->
+      <div class="action-buttons">
+        <a href="#" class="btn btn-outline">Iniciar sesión</a>
+        <a href="#" class="btn btn-primary">Registrarse</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <nav id="nav" class="main-nav">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="programas.html">Programas</a>
+    <a href="habitos.html" class="active">Hábitos</a>
+   
+    <a href="comunidad.html">Comunidad</a>
+    <a href="blog.html">Blog</a>
+
+  </nav>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-container">
         <div class="hero-content">
-            <h2>Encuentra los mejores lugares pet-friendly cerca de ti</h2>
-            <p>Explora restaurantes, parques y tiendas donde tu mascota es bienvenida.</p>
-            <a href="lugares.html" class="btn">Explorar Lugares</a>
+          <h2>Recupera tu bienestar físico después del embarazo</h2>
+          <p class="hero-description">Tu cuerpo cambió, pero tu bienestar y tu fuerza siguen siendo prioridad.</p>
+          <a href="https://wa.me/573153615086?text=Hola,%20quiero%20una%20asesor%C3%ADa%20gratis%20sobre%20recuperaci%C3%B3n%20postparto" target="_blank" class="btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Agenda tu primera asesoría gratis
+          </a>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Paw Places. Todos los derechos reservados.</p>
-    </footer>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section class="about-me" id="about">
+      <div class="about-me-container">
+        <div class="about-me-img">
+          <img src="img/image.png" alt="Foto de la entrenadora" />
+        </div>
+        <div class="about-me-text">
+          <h3>Bienvenida a este que es tu espacio</h3>
+          <p>
+            Este proyecto nace de mi pasión por el entrenamiento y la alimentación saludable. Soy entrenadora con más de 10 años de experiencia en el mundo del fitness y la salud integral. También soy mamá y sobreviviente de depresión postparto, una etapa difícil que me llevó a enfrentar la anorexia.
+          </p>
+          <p>
+            Mi historia es un testimonio de resiliencia. Recuperé mi bienestar físico y emocional gracias al ejercicio y a una alimentación saludable. Aunque luché sola, esa experiencia me fortaleció y me enseñó el valor de la constancia y el autocuidado.
+          </p>
+          <p>
+            A través de esta plataforma quiero compartir mi camino contigo. No se trata solo de transformar tu cuerpo, sino de fortalecer tu mente y tu vida. Estoy aquí para ayudarte a lograr tu mejor versión.
+          </p>
+          <p>
+            Mi nombre es <strong>Jenny Ramos</strong>, y mi misión es acompañarte con una guía real, cercana y basada en mi experiencia real.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="img/girl.png" alt="PostFit Logo" class="logo" />
+        <h3>PostFit</h3>
+      </div>
+      <div class="footer-column">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:info@postfit.com"><i class="fas fa-envelope"></i> info@postfit.com</a></li>
+          <li><a href="#"><i class="fas fa-phone"></i> +34 123 456 789</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 PostFit. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
