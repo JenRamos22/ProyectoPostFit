@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenido a PostFit</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/inicio.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="content-header">
+            <div class="logo-container">
+                <img src="img/girl.png" alt="PostFit Logo" class="logo" />
+                <h1 class="logo-text">PostFit</h1>
+                
+
+            </div>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav id="nav" class="main-nav">
+        <a href="inicio.html" class="active">Inicio</a>
+        <a href="programas.html" id="programas-link" style="display: none;">Programas</a>
+        <a href="comunidad.html" id="comunidad-link" style="display: none;">Comunidad</a>
+        <a href="blog.html" id="blog-link" style="display: none;">Blog</a>
+    </nav>
+
+    <main>
+        <!-- SECCIÓN DE BIENVENIDA -->
+        <section class="welcome">
+            <div class="welcome-container">
+                <h2>Bienvenida, <span id="nombre-usuario"></span></h2>
+                <p>¡Has iniciado sesión con éxito! Aquí puedes acceder a tus programas, comunidad y blog.</p>
+                <button id="logout-button" class="btn btn-primary">Cerrar sesión</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/girl.png" alt="PostFit Logo" class="logo" />
+                <h3>PostFit</h3>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PostFit. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script defer src="js/auth.js"></script>
+</body>
+
+</html>

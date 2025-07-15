@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="login-container">
+    <!-- Parte visual -->
+    <div class="login-left">
+      <h1>¡Bienvenida a PostFit!</h1>
+      <p>Transforma tus hábitos. Transforma tu vida.</p>
+      
+    </div>
+
+    <!-- Formulario -->
+    <div class="login-right">
+      <form id="login-form" class="login-form">
+        <h2>Inicia Sesión</h2>
+        <input type="email" id="correo" placeholder="Correo" required />
+        <input type="password" id="contrasena" placeholder="Contraseña" required />
+        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+
+
+
+        <p id="login-message"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

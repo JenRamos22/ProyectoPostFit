@@ -1,0 +1,806 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Estilos del Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 40px;
+  
+  width: 100%;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  margin: 0;
+  line-height: 1;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menú de navegación en pantallas grandes */
+nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav a:hover {
+  color: #ff6b6b;
+}
+
+nav a.active {
+  color: #ff6b6b;
+}
+
+/* Sección Principal */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(rgba(243, 144, 144, 0.6), rgba(243, 144, 144, 0.6));
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: center;
+  padding: 0 20px;
+  margin: 100px;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 0 1.5em;
+}
+
+.hero-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+.hero-content p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1.5em;
+}
+
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+/* Estilo del botón primario (registrarse) */
+.btn-primary {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+}
+
+/* Estilo del botón contorno (iniciar sesión) */
+.btn-outline {
+  background-color: transparent;
+  color: #ff6b6b;
+  border: 2px solid #ff6b6b;
+  padding: 0.6em 1.6em;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-outline:hover {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.action-buttons .btn {
+  padding: 0.6em 1.6em;
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* Estilos para el formulario de login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Para centrar verticalmente */
+  padding: 1rem;
+  background-color: #fff; /* Si quieres fondo blanco */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: auto;
+}
+
+
+
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
+
+
+
+
+
+.forgot-password {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+/* Estilo de la mitad del formulario */
+
+
+/* Título */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilo para los inputs */
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s;
+}
+
+.form-container input:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
+
+.login-form .btn,
+.form-container .btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+
+
+/* Botón de registro */
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.6em;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease,
+              background-color 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+.btn-primary {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease,
+              transform 0.3s ease,
+              box-shadow 0 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffa3a3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Mensaje de registro */
+#registroMessage {
+  text-align: center;
+  margin-top: 15px;
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+.page-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Estilo de la mitad del diseño */
+.design-container {
+  width: 50%;
+  background-image: url('tu-imagen.jpg'); /* Agrega la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+/* Responsivo para dispositivos pequeños */
+
+
+/* Menú hamburguesa (móvil) */
+.menu-toggle {
+  display: none; /* Por defecto, el botón hamburguesa está oculto */
+  font-size: 30px; /* Tamaño grande para que sea fácil de pulsar */
+  color: #333; /* Color del icono */
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Para que el cursor cambie cuando pasamos por encima */
+}
+
+.btn-whatsapp {
+  background-color: #CBAACB;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp i {
+  font-size: 1.2rem;
+}
+
+.btn-whatsapp:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* Sección About Me */
+.about-me {
+  padding: 4rem 1rem;
+  background-color: #fdfdfd;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-me-img img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-text {
+  color: #333;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-me-text h3 {
+  font-size: 2rem;
+  color: #e94e77;
+  margin-bottom: 1rem;
+}
+
+.program-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.programs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.program-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: scale(1.02);
+}
+
+.program-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.program-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+.program-card p {
+  padding: 0 1rem;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+
+.comunidad-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.testimonio-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.testimonio-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonio-text {
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.testimonio-fecha {
+  font-size: 0.9rem;
+  color: #777;
+}
+/* ===================== */
+/* Hábitos Saludables */
+/* ===================== */
+
+.habitos-section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.habitos-section .section-title {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.habitos-section .section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.habito-info,
+.habito-modulo {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.habito-info h3,
+.habito-modulo h3 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.habito-info ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+  color: #333;
+}
+
+.modulo-card {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-left: 4px solid #56a5a5;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.modulo-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.modulo-card p {
+  font-size: 1rem;
+  color: #555;
+}
+.blog-section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.blog-cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.blog-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.blog-card h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #444;
+}
+
+.blog-card p {
+  color: #666;
+}
+
+.blog-card a {
+  color: #e86c5f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Ocultar el menú de navegación por defecto en pantallas pequeñas */
+.main-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+
+/* Bienvenida después de iniciar sesión */
+.welcome {
+  padding: 4rem 2rem;
+  background-color: #fff6f6;
+  text-align: center;
+}
+
+.welcome-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.welcome-container h2 {
+  font-size: 2rem;
+  color: #e94e77;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.welcome-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none; /* Oculta el menú en pantallas pequeñas */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajusta según la altura de tu header */
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  /* Estilos para el botón hamburguesa */
+  .menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .active {
+    display: flex; /* Muestra el menú cuando se hace clic en el botón hamburguesa */
+  }
+}
+
+/* Para asegurar que el menú hamburguesa sea visible solo en pantallas pequeñas */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Muestra el icono hamburguesa solo en pantallas pequeñas */
+  }
+}
+
+/* Responsive: celulares */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 20px;
+    margin: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .habitos-section {
+    padding: 3rem;
+  }
+
+  .modulo-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+  }
+  
+  .form-container, .design-container {
+    width: 100%; /* Cada sección toma el 100% del ancho */
+    height: auto;
+  }
+
+  .design-container {
+    height: 200px; /* Altura ajustada para que no se vea demasiado grande en pantallas pequeñas */
+    background-position: top; /* Ajusta la imagen de fondo */
+  }
+}
+/* Responsive - móvil */
+@media (max-width: 768px) {
+  .content-header {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .hero {
+    padding: 2em 0;
+    background-position: center top;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+ 
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .about-me-text {
+    text-align: center;
+  }
+}
+
+/* Responsive - escritorio */
+@media (min-width: 769px) {
+  .about-me-container {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .about-me-img,
+  .about-me-text {
+    flex: 1;
+  }
+
+  .about-me-text {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .about-me-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me-img img {
+    height: 100%;
+    max-height: 500px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav {
+    display: none; /* El menú estará oculto por defecto */
+    flex-direction: column; /* Cambiamos los enlaces a columna */
+    text-align: center; /* Centramos los enlaces */
+  }
+
+  .main-nav.active {
+    display: flex; /* Cuando tenga la clase 'active', mostramos el menú */
+  }
+
+  /* Mostramos el botón hamburguesa en pantallas pequeñas */
+  .menu-toggle {
+    display: block; /* Hacemos visible el botón */
+  }
+}
+
